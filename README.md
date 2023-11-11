@@ -17,7 +17,7 @@ This is a simulated Smart Home Automation System that provides basic functionali
 
 ## Installation
 
-1. **Clone the Repository:**
+1. **Clone the Repository:** https://github.com/Bhavyakandhkuri/smart-home.git
 2. **Navigate to the Project Directory:**
 3. **Start the Backend (Simulated):**
 - Make sure Node.js is installed.
