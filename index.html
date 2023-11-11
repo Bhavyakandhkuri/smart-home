@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+    <main>
+        <section id="lights" class="control-section">
+            <h2>Lights</h2>
+            <div class="room-control">
+                <button onclick="toggleLights('livingRoom')">Living Room</button>
+                <span class="status" id="livingRoomStatus">Off</span>
+            </div>
+            <div class="room-control">
+                <button onclick="toggleLights('kitchen')">Kitchen</button>
+                <span class="status" id="kitchenStatus">On</span>
+            </div>
+            <div class="room-control">
+                <button onclick="toggleLights('Bedroom')">Bedroom</button>
+                <span class="status" id="BedroomStatus">On</span>
+            </div>
+        </section>
+        <section id="temperature" class="control-section">
+            <h2>Temperature</h2>
+            <div class="temperature-control">
+                <input type="number" id="tempInput" placeholder="Set Temperature" />
+                <button onclick="changeTemperature()">Set</button>
+            </div>
+        </section>
+        <section id="doorlock" class="control-section">
+            <h2>Door Lock</h2>
+            <div class="door-control">
+                <button onclick="toggleDoorLock()">Toggle Lock</button>
+                <span class="status" id="doorLockStatus">Locked</span>
+            </div>
+        </section>
+        <section id="feedback" class="control-section">
+            <h2>User Feedback</h2>
+            <div class="feedback-control">
+                <div class="stars" onclick="setRating(event)">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+                <button onclick="submitFeedback()">Submit</button>
+                <span id="userRating">Your Rating: Not Rated</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
